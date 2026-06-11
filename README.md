@@ -1,5 +1,131 @@
 # PyBall
 
+Classic Breakout-style fullscreen arcade game developed with Python.
+
+---
+
+## Features
+
+- 10 levels with increasing difficulty
+- 12 different power-ups
+- Star-animated background
+- High score table (top 10)
+- Mouse and keyboard support
+- Adjustable sound effects, music, and FPS
+- Multiplayer support over network
+
+---
+
+## Requirements
+
+- Python 3.10+
+- pygame
+
+```
+pip install pygame
+```
+
+---
+
+## Run
+
+```
+python pyBall.py
+```
+
+---
+
+## Controls
+
+| Key / Action | Function |
+|---|---|
+| **Mouse** / **← →** | Move paddle |
+| **Space** / **Left click** | Launch ball |
+| **M** | Toggle mouse ↔ keyboard |
+| **F1** | Help screen |
+| **ESC** | Return to menu / Exit |
+
+---
+
+## Power-Ups
+
+| Symbol | Color | Effect (30 sec) |
+|---|---|---|
+| **B** | Green | Paddle grows |
+| **K** | Blue | Paddle shrinks |
+| **X** | Purple | Ghost ball — passes through blocks |
+| **C** | Red | +1 Life (max 5) |
+| **O** | Orange | −1 Life |
+| **H** | Yellow | Ball speeds up |
+| **M** | Cyan | Ball shrinks and speeds up |
+| **Y** | Pink | Ball count increases to 3 |
+| **Z** | Light Green | Ball grows, breaks 5 bricks, damages walls |
+| **D** | Blue | Barrier forms at the bottom |
+| **T** | Gold | Sticky ball — sticks to paddle |
+| **A** | Orange-Red | Fire mode — launch bullets with Space / click |
+
+---
+
+## Special Blocks
+
+- **Striped Black Blocks** — Indestructible, appear from level 4 onward; count increases as levels progress.
+
+---
+
+## Difficulty Levels
+
+| Level | Speed | Black Block |
+|---|---|---|
+| 1 – 3 | Normal | None |
+| 4 – 7 | Medium | 1–2 blocks |
+| 8 – 10 | High | 3 blocks |
+
+---
+
+## Files
+
+| File | Description |
+|---|---|
+| `pyBall.py` | Game source code |
+| `pyBall.ico` | Application icon |
+| `highscores.json` | Shared high score table |
+| `%APPDATA%\PyBall\settings.json` | User-specific settings |
+| `derle.bat` | PyInstaller exe build tool |
+
+---
+
+## Windows Defender Warning
+
+Since `pyBall.exe` does not contain a digital signature, Windows Defender may block it on first run.
+
+**Solution:**
+1. **Windows Security** → Virus & threat protection
+2. **Virus & threat protection settings** → Exclusions
+3. **Add an exclusion** → Folder → Select the folder containing `pyBall.exe`
+
+Or you can submit a false positive report to Microsoft:
+https://www.microsoft.com/en-us/wdsi/filesubmission
+
+---
+
+## Build (EXE)
+
+Run `derle.bat`. The compiled file is output to `dist\pyBall.exe`.
+
+For smaller size with UPX, place `upx.exe` in `C:\upx\` — `derle.bat` detects it automatically.
+
+---
+
+## Developer
+
+**FreewareTR.com** — Free software archive  
+**youtube.com/CaprazBilgi** — Software and technology content
+
+---
+---
+
+# PyBall (Türkçe)
+
 Klasik Breakout tarzı, Python ile geliştirilmiş tam ekran arcade oyunu.
 
 ---
